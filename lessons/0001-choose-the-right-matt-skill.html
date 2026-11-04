@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第一課：選對 Matt Skill</title><link rel="stylesheet" href="../assets/teaching.css"></head>
+<body>
+<h1>第一課：先判斷你在哪一段</h1>
+<p>不要背二十多個 skill。先把工作定位成四類：想法、計畫、執行、特殊情況。</p>
+<h2>核心模型</h2>
+<ol><li><strong>想法還模糊：</strong>有 repo 用 <code>/grill-with-docs</code>，沒有 repo 用 <code>/grill-me</code>。</li><li><strong>想法已清楚：</strong>多 session 工作依序用 <code>/to-spec</code> 和 <code>/to-tickets</code>。小工作直接 <code>/implement</code>。</li><li><strong>開始執行：</strong>單票用 <code>/implement</code>，整份 spec 且可平行化用 <code>/implement-spec</code>。</li><li><strong>特殊情況：</strong>bug 用 <code>/diagnosing-bugs</code>，超大型未知工作用 <code>/wayfinder</code>，需要 runnable answer 用 <code>/prototype</code>。</li></ol>
+<div class="callout"><strong>一句話規則：</strong>先問「我缺的是決策、計畫、程式碼，還是證據？」決策用 grilling，計畫用 spec/tickets，程式碼用 implement，證據用 prototype/research/diagnosis。</div>
+<h2>三個情境練習</h2>
+<ol><li>你想新增會員等級，但規則、升降級與舊資料遷移都未定。答案：<code>/grill-with-docs</code>。</li><li>規格已確認，共八張相依 ticket，希望一次完成。答案：<code>/implement-spec</code>。</li><li>付款偶發重複扣款，目前沒有穩定重現方式。答案：<code>/diagnosing-bugs</code>。</li></ol>
+<h2>可直接複製的開場</h2>
+<p><code>/ask-matt 我目前有一個［現況］，想達成［結果］，已知［限制］。請告訴我應從哪個 skill 開始，以及後續流程。</code></p>
+<p>下一步可查閱 <a href="../reference/matt-skills-cheat-sheet.html">完整速查表</a>。有任何一段不清楚，直接請 agent 針對你的真實案例做選擇題與回饋。</p>
+<p>Primary source: <a href="../skills/engineering/ask-matt/SKILL.md">Ask Matt router</a></p>
+</body></html>

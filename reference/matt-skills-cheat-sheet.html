@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Matt Skills 速查表</title><link rel="stylesheet" href="../assets/teaching.css"></head>
+<body>
+<h1>Matt Skills 速查表</h1>
+<p class="flow">想法 → <code>/grill-with-docs</code> → <code>/to-spec</code> → <code>/to-tickets</code> → <code>/implement</code> 或 <code>/implement-spec</code> → <code>/pr</code> → <code>/retro</code></p>
+<table><thead><tr><th>你現在的情境</th><th>使用</th><th>判斷關鍵</th></tr></thead><tbody>
+<tr><td>不知道該選哪個</td><td><code>/ask-matt</code></td><td>只描述現況與想達成的結果</td></tr>
+<tr><td>有 repo，想法仍模糊</td><td><code>/grill-with-docs</code></td><td>訪談並留下 GLOSSARY、ADR</td></tr>
+<tr><td>沒有 repo，想法仍模糊</td><td><code>/grill-me</code></td><td>訪談但不留下專案文件</td></tr>
+<tr><td>對話已充分，要形成規格</td><td><code>/to-spec</code></td><td>只整理，不重新訪談</td></tr>
+<tr><td>規格要拆成可執行工作</td><td><code>/to-tickets</code></td><td>產生 tracer-bullet tickets 與 blocking edges</td></tr>
+<tr><td>做一張 ticket 或小功能</td><td><code>/implement</code></td><td>TDD 實作，最後 code review</td></tr>
+<tr><td>整份 spec 可平行實作</td><td><code>/implement-spec</code></td><td>依 task graph 分派多個 implementer</td></tr>
+<tr><td>很難重現或定位的 bug</td><td><code>/diagnosing-bugs</code></td><td>先建立會紅的 feedback loop</td></tr>
+<tr><td>超大型、路徑仍不清楚</td><td><code>/wayfinder</code></td><td>先解 decision tickets，不直接做交付物</td></tr>
+<tr><td>要驗證 UI、狀態或邏輯</td><td><code>/prototype</code></td><td>用 throwaway code 回答一個問題</td></tr>
+<tr><td>外部 issue 或 PR 湧入</td><td><code>/triage</code></td><td>只處理外來、尚未 agent-ready 的項目</td></tr>
+<tr><td>改善架構與 agent 可操作性</td><td><code>/improve-codebase-architecture</code></td><td>掃描 deepening opportunities</td></tr>
+<tr><td>需要查官方資料</td><td><code>/research</code></td><td>背景研究並留下有引用的 Markdown</td></tr>
+<tr><td>人類才能完成的控制台步驟</td><td><code>/wizard</code></td><td>產生互動式操作腳本</td></tr>
+<tr><td>跨 session、目錄或同事交接</td><td><code>/handoff</code></td><td>需要可攜式 Markdown 才使用</td></tr>
+<tr><td>完成後改善 agent 環境</td><td><code>/retro</code></td><td>改善檢查、文件、導覽與工具，不是改產品碼</td></tr>
+</tbody></table>
+<h2>最常見誤用</h2>
+<ul><li><code>/to-spec</code> 前資訊還沒談清楚。先用 <code>/grill-with-docs</code>。</li><li>把 <code>/to-tickets</code> 產生的票再丟進 <code>/triage</code>。這些票已經 agent-ready。</li><li>小功能使用 <code>/wayfinder</code>。它只適合超過單一 session 可掌握範圍的工作。</li><li>每個 phase 都用 <code>/handoff</code>。只有跨 harness、目錄、同事或旁支工作才需要。</li></ul>
+</body></html>
